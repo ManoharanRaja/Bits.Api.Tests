@@ -79,6 +79,16 @@ namespace Bits.Api.Tests.StepDefinitions
             _scenarioContext["Payload"] = user;
         }
 
+        [Given(@"I have a user created as ""([^""]*)"", ""([^""]*)"", ""([^""]*)"", ""([^""]*)"", ""([^""]*)"", ""([^""]*)"", and (.*)")]
+        public void GivenIHaveAUserCreatedAsAnd(string title, string firstName, string lastName, string dateOfBirth, string email, string password, int rating)
+        {
+            GivenIHaveAValidAPIKey();
+            GivenIHaveAUserPayloadWithAnd(title, firstName, lastName, dateOfBirth, email, password, rating);
+            WhenISendAPOSTRequestTo("/users");
+            ThenTheResponseStatusCodeShouldBe(200);
+        }
+
+
         [Given(@"I have a user payload without ""([^""]*)"" field")]
         public void GivenIHaveAUserPayloadWithoutField(string filedName)
         {
@@ -92,6 +102,25 @@ namespace Bits.Api.Tests.StepDefinitions
         {
             var payload = new { };
             _scenarioContext["Payload"] = payload;  
+        }
+
+        [Given(@"I have a invalid user payload")]
+        public void GivenIHaveAInvalidUserPayload()
+        {
+
+            var payload = @"
+                        {
+                          ""title"": ""Mr"",
+                          ""firstName"": ""John"",
+                          ""lastName"": ""Doe"",
+                          ""dateOfBirth"": ""1987-06-04"",
+                          ""email"": ""test@email.com"",
+                          ""password"": ""password123"",
+                          ""rating"": 7,
+                          ""address"": ""London""
+                         "; // Invalid JSON
+
+            _scenarioContext["Payload"] = payload;
         }
 
         [Given(@"I have a user payload with Additional fields")]
@@ -166,7 +195,6 @@ namespace Bits.Api.Tests.StepDefinitions
             _response = _client.Execute(_request);
             _scenarioContext["Response"] = _response;
         }
-
 
         [Then(@"the response status code should be (.*)")]
         public void ThenTheResponseStatusCodeShouldBe(int statusCode)
