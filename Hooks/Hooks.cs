@@ -38,30 +38,28 @@ namespace Bits.Api.Tests.Hooks
         public void AfterStep(ScenarioContext sc)
         {
             var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
-            PropertyInfo pInfo = typeof(ScenarioContext).GetProperty("ScenarioExecutionStatus", BindingFlags.Instance | BindingFlags.Public);
-            MethodInfo getter = pInfo.GetGetMethod(nonPublic: true);
-            object TestResult = getter.Invoke(sc, null);
+            
             if (sc.TestError == null)
             {
                 if (stepType == "Given")
-                    scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
+                    scenario.CreateNode<Given>(stepType +" " + ScenarioStepContext.Current.StepInfo.Text);
                 else if (stepType == "When")
-                    scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text);
+                    scenario.CreateNode<When>(stepType + " " + ScenarioStepContext.Current.StepInfo.Text);
                 else if (stepType == "Then")
-                    scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text);
+                    scenario.CreateNode<Then>(stepType + " " + ScenarioStepContext.Current.StepInfo.Text);
                 else if (stepType == "And")
-                    scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
+                    scenario.CreateNode<And>(stepType + " " + ScenarioStepContext.Current.StepInfo.Text);
             }
             if (sc.TestError != null)
             {
                 if (stepType == "Given")
-                    scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Fail(sc.TestError.Message);
+                    scenario.CreateNode<Given>(stepType + " " + ScenarioStepContext.Current.StepInfo.Text).Fail(sc.TestError.Message);
                 if (stepType == "When")
-                    scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Fail(sc.TestError.Message);
+                    scenario.CreateNode<When>(stepType + " " + ScenarioStepContext.Current.StepInfo.Text).Fail(sc.TestError.Message);
                 if (stepType == "Then")
-                    scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Fail(sc.TestError.Message);
+                    scenario.CreateNode<Then>(stepType + " " + ScenarioStepContext.Current.StepInfo.Text).Fail(sc.TestError.Message);
                 if (stepType == "And")
-                    scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text).Fail(sc.TestError.Message);
+                    scenario.CreateNode<And>(stepType + " " + ScenarioStepContext.Current.StepInfo.Text).Fail(sc.TestError.Message);
             }
         }
         

@@ -49,7 +49,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">20-07-2024 13:56:09</span>
+                    <span class="badge badge-primary">20-07-2024 17:31:21</span>
                 </a>
             </li>
         </ul>
@@ -119,8 +119,8 @@
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create two user with Same E-mail addresses</p> 
-								<p class="duration text-sm">0h:0m:2s+351ms</p> 
-								<span class="datetime">13:56:09 PM</span>
+								<p class="duration text-sm">0h:0m:0s+397ms</p> 
+								<span class="datetime">17:31:21 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -128,9 +128,9 @@
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Create two user with Same E-mail addresses</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:09</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:11</span>
-										<span class='badge badge-default'>0h:0m:2s+351ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:21</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:22</span>
+										<span class='badge badge-default'>0h:0m:0s+397ms</span>
 									</div>
 																	</div>
 							</div>
@@ -140,7 +140,7 @@
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user created as "Mr", "Same1", "Email1", "2005-10-18", "sameemail1@test.com", "secret password1", and 4</div>
+						<div class="node">Given I have a user created as "Mr", "Same1", "Email1", "2005-10-18", "sameemail1@test.com", "secret password1", and 4</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -154,7 +154,7 @@
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -168,7 +168,7 @@
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Mr", "Same2", "Email2", "2000-10-18", "sameemail1@test.com", "secret password2", and 4</div>
+						<div class="node">Given I have a user payload with "Mr", "Same2", "Email2", "2000-10-18", "sameemail1@test.com", "secret password2", and 4</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -182,7 +182,7 @@
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -196,7 +196,7 @@
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -214,11 +214,11 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:11</td>
+				<td>17:31:22</td>
 				<td>
 Expected Response Code is 400
 Actual Response Code is 200
- {"status":"Success","data":{"userId":"8fdbc9ed-784a-48c1-97a1-cbfb6cafcc20","title":"Mr","firstName":"Same2","lastName":"Email2","dateOfBirth":"2000-10-18","email":"sameemail1@test.com","password":"secret password2","rating":4,"status":"new"},"error":null}
+ {"status":"Success","data":{"userId":"a0ed16c1-9fb3-4669-8322-74bd87c3d961","title":"Mr","firstName":"Same2","lastName":"Email2","dateOfBirth":"2000-10-18","email":"sameemail1@test.com","password":"secret password2","rating":4,"status":"new"},"error":null}
 Assert.That(statusCode == (int)_response.StatusCode, Is.True)
   Expected: True
   But was:  False									</td>
@@ -240,8 +240,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create User with Additional fields not defined in the requirements</p> 
-								<p class="duration text-sm">0h:0m:0s+151ms</p> 
-								<span class="datetime">13:56:11 PM</span>
+								<p class="duration text-sm">0h:0m:0s+127ms</p> 
+								<span class="datetime">17:31:22 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -249,9 +249,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create User with Additional fields not defined in the requirements</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:11</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:11</span>
-										<span class='badge badge-default'>0h:0m:0s+151ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:22</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:22</span>
+										<span class='badge badge-default'>0h:0m:0s+127ms</span>
 									</div>
 																	</div>
 							</div>
@@ -261,7 +261,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -275,7 +275,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with Additional fields</div>
+						<div class="node">Given I have a user payload with Additional fields</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -289,7 +289,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -303,7 +303,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -326,8 +326,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create User with Empty Json body</p> 
-								<p class="duration text-sm">0h:0m:0s+128ms</p> 
-								<span class="datetime">13:56:11 PM</span>
+								<p class="duration text-sm">0h:0m:0s+116ms</p> 
+								<span class="datetime">17:31:22 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -335,9 +335,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create User with Empty Json body</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:11</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:11</span>
-										<span class='badge badge-default'>0h:0m:0s+128ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:22</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:22</span>
+										<span class='badge badge-default'>0h:0m:0s+116ms</span>
 									</div>
 																	</div>
 							</div>
@@ -347,7 +347,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -361,7 +361,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a empty user payload</div>
+						<div class="node">Given I have a empty user payload</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -375,7 +375,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -389,7 +389,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -403,7 +403,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -426,8 +426,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid Date Of Birth</p> 
-								<p class="duration text-sm">0h:0m:0s+116ms</p> 
-								<span class="datetime">13:56:11 PM</span>
+								<p class="duration text-sm">0h:0m:0s+108ms</p> 
+								<span class="datetime">17:31:22 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -435,9 +435,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Invalid Date Of Birth</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:11</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:12</span>
-										<span class='badge badge-default'>0h:0m:0s+116ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:22</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:22</span>
+										<span class='badge badge-default'>0h:0m:0s+108ms</span>
 									</div>
 																	</div>
 							</div>
@@ -447,7 +447,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -461,7 +461,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Mr", "DOB1", "DateOfBirth", "2008/01/30", "mrdob1dateofbirth@email.com", "secret password", and 7</div>
+						<div class="node">Given I have a user payload with "Mr", "DOB1", "DateOfBirth", "2008/01/30", "mrdob1dateofbirth@email.com", "secret password", and 7</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -475,7 +475,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -489,7 +489,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -503,7 +503,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -517,7 +517,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "Validation error - date of birth must be in YYYY-MM-DD format"</div>
+						<div class="node">Then the error response errorMessage should be "Validation error - date of birth must be in YYYY-MM-DD format"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -540,8 +540,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid Date Of Birth</p> 
-								<p class="duration text-sm">0h:0m:0s+115ms</p> 
-								<span class="datetime">13:56:12 PM</span>
+								<p class="duration text-sm">0h:0m:0s+109ms</p> 
+								<span class="datetime">17:31:22 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -549,9 +549,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Invalid Date Of Birth</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:12</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:12</span>
-										<span class='badge badge-default'>0h:0m:0s+115ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:22</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:22</span>
+										<span class='badge badge-default'>0h:0m:0s+109ms</span>
 									</div>
 																	</div>
 							</div>
@@ -561,7 +561,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -575,7 +575,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Ms", "DOB2", "DateOfBirth", "20121212", "msdob2dateofbirth@email.com", "secret password", and 8</div>
+						<div class="node">Given I have a user payload with "Ms", "DOB2", "DateOfBirth", "20121212", "msdob2dateofbirth@email.com", "secret password", and 8</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -589,7 +589,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -603,7 +603,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -617,7 +617,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -631,7 +631,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "Validation error - date of birth must be in YYYY-MM-DD format"</div>
+						<div class="node">Then the error response errorMessage should be "Validation error - date of birth must be in YYYY-MM-DD format"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -654,8 +654,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid Date Of Birth</p> 
-								<p class="duration text-sm">0h:0m:0s+155ms</p> 
-								<span class="datetime">13:56:12 PM</span>
+								<p class="duration text-sm">0h:0m:0s+115ms</p> 
+								<span class="datetime">17:31:22 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -663,9 +663,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Create user with Invalid Date Of Birth</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:12</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:12</span>
-										<span class='badge badge-default'>0h:0m:0s+155ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:22</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:22</span>
+										<span class='badge badge-default'>0h:0m:0s+115ms</span>
 									</div>
 																	</div>
 							</div>
@@ -675,7 +675,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -689,7 +689,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Mr", "DOB3", "DateOfBirth", "2008-02-30", "mrdob3dateofbirth@email.com", "secret password", and 5</div>
+						<div class="node">Given I have a user payload with "Mr", "DOB3", "DateOfBirth", "2008-02-30", "mrdob3dateofbirth@email.com", "secret password", and 5</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -703,7 +703,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -717,7 +717,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -735,11 +735,11 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:12</td>
+				<td>17:31:22</td>
 				<td>
 Expected Response Code is 400
 Actual Response Code is 200
- {"status":"Success","data":{"userId":"4f04a96a-8fd5-412b-88f3-3649bc6929f3","title":"Mr","firstName":"DOB3","lastName":"DateOfBirth","dateOfBirth":"2008-02-30","email":"mrdob3dateofbirth@email.com","password":"secret password","rating":5,"status":"new"},"error":null}
+ {"status":"Success","data":{"userId":"5b0a780f-695d-4a57-8613-e7bc072a2fdb","title":"Mr","firstName":"DOB3","lastName":"DateOfBirth","dateOfBirth":"2008-02-30","email":"mrdob3dateofbirth@email.com","password":"secret password","rating":5,"status":"new"},"error":null}
 Assert.That(statusCode == (int)_response.StatusCode, Is.True)
   Expected: True
   But was:  False									</td>
@@ -761,8 +761,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid Date Of Birth</p> 
-								<p class="duration text-sm">0h:0m:0s+150ms</p> 
-								<span class="datetime">13:56:12 PM</span>
+								<p class="duration text-sm">0h:0m:0s+113ms</p> 
+								<span class="datetime">17:31:22 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -770,9 +770,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Create user with Invalid Date Of Birth</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:12</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:12</span>
-										<span class='badge badge-default'>0h:0m:0s+150ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:22</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:22</span>
+										<span class='badge badge-default'>0h:0m:0s+113ms</span>
 									</div>
 																	</div>
 							</div>
@@ -782,7 +782,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -796,7 +796,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Ms", "DOB4", "DateOfBirth", "2008-24-12", "msdob4dateofbirth@email.com", "secret password", and 6</div>
+						<div class="node">Given I have a user payload with "Ms", "DOB4", "DateOfBirth", "2008-24-12", "msdob4dateofbirth@email.com", "secret password", and 6</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -810,7 +810,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -824,7 +824,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -842,11 +842,11 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:12</td>
+				<td>17:31:22</td>
 				<td>
 Expected Response Code is 400
 Actual Response Code is 200
- {"status":"Success","data":{"userId":"e585ed57-8f7f-4a49-b5b9-14e045de2c71","title":"Ms","firstName":"DOB4","lastName":"DateOfBirth","dateOfBirth":"2008-24-12","email":"msdob4dateofbirth@email.com","password":"secret password","rating":6,"status":"active"},"error":null}
+ {"status":"Success","data":{"userId":"05cfa665-cbc7-4790-83ec-ab6b54479083","title":"Ms","firstName":"DOB4","lastName":"DateOfBirth","dateOfBirth":"2008-24-12","email":"msdob4dateofbirth@email.com","password":"secret password","rating":6,"status":"active"},"error":null}
 Assert.That(statusCode == (int)_response.StatusCode, Is.True)
   Expected: True
   But was:  False									</td>
@@ -868,8 +868,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid Date Of Birth</p> 
-								<p class="duration text-sm">0h:0m:0s+112ms</p> 
-								<span class="datetime">13:56:12 PM</span>
+								<p class="duration text-sm">0h:0m:0s+109ms</p> 
+								<span class="datetime">17:31:22 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -877,9 +877,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Invalid Date Of Birth</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:12</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:12</span>
-										<span class='badge badge-default'>0h:0m:0s+112ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:22</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:23</span>
+										<span class='badge badge-default'>0h:0m:0s+109ms</span>
 									</div>
 																	</div>
 							</div>
@@ -889,7 +889,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -903,7 +903,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Ms", "DOB5", "DateOfBirth", "26-11-1994", "msdob5dateofbirth@email.com", "secret password", and 6</div>
+						<div class="node">Given I have a user payload with "Ms", "DOB5", "DateOfBirth", "26-11-1994", "msdob5dateofbirth@email.com", "secret password", and 6</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -917,7 +917,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -931,7 +931,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -945,7 +945,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -959,7 +959,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "Validation error - date of birth must be in YYYY-MM-DD format"</div>
+						<div class="node">Then the error response errorMessage should be "Validation error - date of birth must be in YYYY-MM-DD format"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -982,8 +982,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid E-mail addresses</p> 
-								<p class="duration text-sm">0h:0m:0s+105ms</p> 
-								<span class="datetime">13:56:12 PM</span>
+								<p class="duration text-sm">0h:0m:0s+098ms</p> 
+								<span class="datetime">17:31:23 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -991,9 +991,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Invalid E-mail addresses</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:12</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:12</span>
-										<span class='badge badge-default'>0h:0m:0s+105ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:23</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:23</span>
+										<span class='badge badge-default'>0h:0m:0s+098ms</span>
 									</div>
 																	</div>
 							</div>
@@ -1003,7 +1003,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1017,7 +1017,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Mr", "InvalidEmail1", "Email", "2005-10-18", "invalidemail.com", "secret password", and 4</div>
+						<div class="node">Given I have a user payload with "Mr", "InvalidEmail1", "Email", "2005-10-18", "invalidemail.com", "secret password", and 4</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1031,7 +1031,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1045,7 +1045,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1059,7 +1059,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1073,7 +1073,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "Validation error - must provide valid e-mail add"</div>
+						<div class="node">Then the error response errorMessage should be "Validation error - must provide valid e-mail add"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1096,8 +1096,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid E-mail addresses</p> 
-								<p class="duration text-sm">0h:0m:0s+112ms</p> 
-								<span class="datetime">13:56:12 PM</span>
+								<p class="duration text-sm">0h:0m:0s+107ms</p> 
+								<span class="datetime">17:31:23 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -1105,9 +1105,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Invalid E-mail addresses</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:12</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:12</span>
-										<span class='badge badge-default'>0h:0m:0s+112ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:23</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:23</span>
+										<span class='badge badge-default'>0h:0m:0s+107ms</span>
 									</div>
 																	</div>
 							</div>
@@ -1117,7 +1117,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1131,7 +1131,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Miss", "InvalidEmail2", "Email", "2005-10-18", "@example.com", "secret password", and 5</div>
+						<div class="node">Given I have a user payload with "Miss", "InvalidEmail2", "Email", "2005-10-18", "@example.com", "secret password", and 5</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1145,7 +1145,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1159,7 +1159,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1173,7 +1173,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1187,7 +1187,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "Validation error - must provide valid e-mail add"</div>
+						<div class="node">Then the error response errorMessage should be "Validation error - must provide valid e-mail add"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1210,8 +1210,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid E-mail addresses</p> 
-								<p class="duration text-sm">0h:0m:0s+115ms</p> 
-								<span class="datetime">13:56:12 PM</span>
+								<p class="duration text-sm">0h:0m:0s+101ms</p> 
+								<span class="datetime">17:31:23 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -1219,9 +1219,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Invalid E-mail addresses</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:12</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:12</span>
-										<span class='badge badge-default'>0h:0m:0s+115ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:23</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:23</span>
+										<span class='badge badge-default'>0h:0m:0s+101ms</span>
 									</div>
 																	</div>
 							</div>
@@ -1231,7 +1231,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1245,7 +1245,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Mx", "InvalidEmail3", "Email", "2005-10-18", "InvalidEmail3", "secret password", and 2</div>
+						<div class="node">Given I have a user payload with "Mx", "InvalidEmail3", "Email", "2005-10-18", "InvalidEmail3", "secret password", and 2</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1259,7 +1259,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1273,7 +1273,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1287,7 +1287,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1301,7 +1301,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "Validation error - must provide valid e-mail add"</div>
+						<div class="node">Then the error response errorMessage should be "Validation error - must provide valid e-mail add"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1324,8 +1324,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid E-mail addresses</p> 
-								<p class="duration text-sm">0h:0m:0s+109ms</p> 
-								<span class="datetime">13:56:12 PM</span>
+								<p class="duration text-sm">0h:0m:0s+107ms</p> 
+								<span class="datetime">17:31:23 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -1333,9 +1333,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Invalid E-mail addresses</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:12</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:13</span>
-										<span class='badge badge-default'>0h:0m:0s+109ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:23</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:23</span>
+										<span class='badge badge-default'>0h:0m:0s+107ms</span>
 									</div>
 																	</div>
 							</div>
@@ -1345,7 +1345,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1359,7 +1359,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Ms", "InvalidEmail4", "Email", "2005-10-18", "Abc..123@example.com", "secret password", and 6</div>
+						<div class="node">Given I have a user payload with "Ms", "InvalidEmail4", "Email", "2005-10-18", "Abc..123@example.com", "secret password", and 6</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1373,7 +1373,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1387,7 +1387,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1401,7 +1401,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1415,7 +1415,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "Validation error - must provide valid e-mail add"</div>
+						<div class="node">Then the error response errorMessage should be "Validation error - must provide valid e-mail add"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1438,8 +1438,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid First Name</p> 
-								<p class="duration text-sm">0h:0m:0s+119ms</p> 
-								<span class="datetime">13:56:13 PM</span>
+								<p class="duration text-sm">0h:0m:0s+134ms</p> 
+								<span class="datetime">17:31:23 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -1447,9 +1447,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Invalid First Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:13</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:13</span>
-										<span class='badge badge-default'>0h:0m:0s+119ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:23</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:23</span>
+										<span class='badge badge-default'>0h:0m:0s+134ms</span>
 									</div>
 																	</div>
 							</div>
@@ -1459,7 +1459,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1473,7 +1473,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with First Name containing 0 characters</div>
+						<div class="node">Given I have a user payload with First Name containing 0 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1487,7 +1487,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1501,7 +1501,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1515,7 +1515,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1529,7 +1529,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "__ERR_FNAME_INVALID__"</div>
+						<div class="node">Then the error response errorMessage should be "__ERR_FNAME_INVALID__"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1552,8 +1552,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid First Name</p> 
-								<p class="duration text-sm">0h:0m:0s+121ms</p> 
-								<span class="datetime">13:56:13 PM</span>
+								<p class="duration text-sm">0h:0m:0s+145ms</p> 
+								<span class="datetime">17:31:23 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -1561,9 +1561,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Invalid First Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:13</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:13</span>
-										<span class='badge badge-default'>0h:0m:0s+121ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:23</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:23</span>
+										<span class='badge badge-default'>0h:0m:0s+145ms</span>
 									</div>
 																	</div>
 							</div>
@@ -1573,7 +1573,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1587,7 +1587,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with First Name containing 1 characters</div>
+						<div class="node">Given I have a user payload with First Name containing 1 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1601,7 +1601,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1615,7 +1615,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1629,7 +1629,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1643,7 +1643,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "__ERR_FNAME_INVALID__"</div>
+						<div class="node">Then the error response errorMessage should be "__ERR_FNAME_INVALID__"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1666,8 +1666,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid First Name</p> 
-								<p class="duration text-sm">0h:0m:0s+116ms</p> 
-								<span class="datetime">13:56:13 PM</span>
+								<p class="duration text-sm">0h:0m:0s+152ms</p> 
+								<span class="datetime">17:31:23 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -1675,9 +1675,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Invalid First Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:13</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:13</span>
-										<span class='badge badge-default'>0h:0m:0s+116ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:23</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:23</span>
+										<span class='badge badge-default'>0h:0m:0s+152ms</span>
 									</div>
 																	</div>
 							</div>
@@ -1687,7 +1687,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1701,7 +1701,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with First Name containing 256 characters</div>
+						<div class="node">Given I have a user payload with First Name containing 256 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1715,7 +1715,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1729,7 +1729,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1743,7 +1743,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1757,7 +1757,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "__ERR_FNAME_INVALID__"</div>
+						<div class="node">Then the error response errorMessage should be "__ERR_FNAME_INVALID__"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1780,8 +1780,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create User with Invalid Json format</p> 
-								<p class="duration text-sm">0h:0m:0s+101ms</p> 
-								<span class="datetime">13:56:13 PM</span>
+								<p class="duration text-sm">0h:0m:0s+120ms</p> 
+								<span class="datetime">17:31:23 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -1789,9 +1789,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create User with Invalid Json format</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:13</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:13</span>
-										<span class='badge badge-default'>0h:0m:0s+101ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:23</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:24</span>
+										<span class='badge badge-default'>0h:0m:0s+120ms</span>
 									</div>
 																	</div>
 							</div>
@@ -1801,7 +1801,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1815,7 +1815,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a invalid user payload</div>
+						<div class="node">Given I have a invalid user payload</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1829,7 +1829,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1843,7 +1843,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 502</div>
+						<div class="node">Then the response status code should be 502</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1867,7 +1867,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid Last Name</p> 
 								<p class="duration text-sm">0h:0m:0s+122ms</p> 
-								<span class="datetime">13:56:13 PM</span>
+								<span class="datetime">17:31:24 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -1875,8 +1875,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Invalid Last Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:13</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:13</span>
+										<span class='badge badge-success'>20-07-2024 17:31:24</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:24</span>
 										<span class='badge badge-default'>0h:0m:0s+122ms</span>
 									</div>
 																	</div>
@@ -1887,7 +1887,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1901,7 +1901,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with Last Name containing 0 characters</div>
+						<div class="node">Given I have a user payload with Last Name containing 0 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1915,7 +1915,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1929,7 +1929,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1943,7 +1943,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1957,7 +1957,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "Validation error - last name must be between 2 and 255 characters"</div>
+						<div class="node">Then the error response errorMessage should be "Validation error - last name must be between 2 and 255 characters"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -1980,8 +1980,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid Last Name</p> 
-								<p class="duration text-sm">0h:0m:0s+114ms</p> 
-								<span class="datetime">13:56:13 PM</span>
+								<p class="duration text-sm">0h:0m:0s+108ms</p> 
+								<span class="datetime">17:31:24 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -1989,9 +1989,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Invalid Last Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:13</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:13</span>
-										<span class='badge badge-default'>0h:0m:0s+114ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:24</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:24</span>
+										<span class='badge badge-default'>0h:0m:0s+108ms</span>
 									</div>
 																	</div>
 							</div>
@@ -2001,7 +2001,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2015,7 +2015,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with Last Name containing 1 characters</div>
+						<div class="node">Given I have a user payload with Last Name containing 1 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2029,7 +2029,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2043,7 +2043,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2057,7 +2057,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2071,7 +2071,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "Validation error - last name must be between 2 and 255 characters"</div>
+						<div class="node">Then the error response errorMessage should be "Validation error - last name must be between 2 and 255 characters"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2094,8 +2094,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid Last Name</p> 
-								<p class="duration text-sm">0h:0m:0s+134ms</p> 
-								<span class="datetime">13:56:13 PM</span>
+								<p class="duration text-sm">0h:0m:0s+119ms</p> 
+								<span class="datetime">17:31:24 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -2103,9 +2103,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Create user with Invalid Last Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:13</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:13</span>
-										<span class='badge badge-default'>0h:0m:0s+134ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:24</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:24</span>
+										<span class='badge badge-default'>0h:0m:0s+119ms</span>
 									</div>
 																	</div>
 							</div>
@@ -2115,7 +2115,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2129,7 +2129,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with Last Name containing 256 characters</div>
+						<div class="node">Given I have a user payload with Last Name containing 256 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2143,7 +2143,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2157,7 +2157,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -2175,11 +2175,11 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:13</td>
+				<td>17:31:24</td>
 				<td>
 Expected Response Code is 400
 Actual Response Code is 200
- {"status":"Success","data":{"userId":"12c853d8-5a40-4f24-85cc-9114a65ccdf0","title":"Mr","firstName":"John","lastName":"6sbJFIyBh5wYIW8sd5KFItSwzUf5YkO6PBRB48AhOIW4Uzdc3AoipTBllI8EPbkzzbl0KzUKzGLuISPuZxwmF9Um6XNwh0iPv49FJG6zmiuCDzFdv7uBDRtIgit5yDOIsi1SlpAsFa6bBxZBdltv6uSuc6iBuuN8CcxBH8jHF4PkPv6o5c3PcWScOPfJLu0TE38xK5k7m3blFIEA69HOJi1ZAgNiLGM0iciBtB1hXv2vZh33MRvXKohpcSENnzdI","dateOfBirth":"1987-06-04","email":"test@email.com","password":"password123","rating":7,"status":"active"},"error":null}
+ {"status":"Success","data":{"userId":"c21c46c0-7e4c-441b-904a-f4aa7678b593","title":"Mr","firstName":"John","lastName":"zpKPO9FkkFITyTkHH0bXgA2a2v5TTlC4mzFCj6bF0tzaQlCCYB2UdS06TLhauwnwmdxz6EuOBJ4EFqpQqYuNbYg0IeqomJCQ0uugkMAqZiDFA37WaEuXg6FE8mIuYxYJexHuqDeY8nKRSIH7RKAtMCvtMyDa5a3ona3Hs1YKgh0LDu1ULxiJD1GPiEkWO35pGaAjhiW3A2pP2G1i7tnujjj7OXXj0M0mgI1l3LsTPfLjc7MGFoKYNQTxQjxnpybT","dateOfBirth":"1987-06-04","email":"test@email.com","password":"password123","rating":7,"status":"active"},"error":null}
 Assert.That(statusCode == (int)_response.StatusCode, Is.True)
   Expected: True
   But was:  False									</td>
@@ -2201,8 +2201,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid Rating</p> 
-								<p class="duration text-sm">0h:0m:0s+150ms</p> 
-								<span class="datetime">13:56:13 PM</span>
+								<p class="duration text-sm">0h:0m:0s+120ms</p> 
+								<span class="datetime">17:31:24 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -2210,9 +2210,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Create user with Invalid Rating</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:13</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:14</span>
-										<span class='badge badge-default'>0h:0m:0s+150ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:24</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:24</span>
+										<span class='badge badge-default'>0h:0m:0s+120ms</span>
 									</div>
 																	</div>
 							</div>
@@ -2222,7 +2222,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2236,7 +2236,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Mx", "James", "Bond1", "2008-02-28", "mxjamesbond@email.com", "secret password", and 11</div>
+						<div class="node">Given I have a user payload with "Mx", "James", "Bond1", "2008-02-28", "mxjamesbond@email.com", "secret password", and 11</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2250,7 +2250,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2264,7 +2264,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -2282,11 +2282,11 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:14</td>
+				<td>17:31:24</td>
 				<td>
 Expected Response Code is 400
 Actual Response Code is 200
- {"status":"Success","data":{"userId":"d9200496-8fd9-402a-9054-f5104929b11f","title":"Mx","firstName":"James","lastName":"Bond1","dateOfBirth":"2008-02-28","email":"mxjamesbond@email.com","password":"secret password","rating":11,"status":"active"},"error":null}
+ {"status":"Success","data":{"userId":"04d5dcef-5a13-4f65-a297-2d3b1913acd3","title":"Mx","firstName":"James","lastName":"Bond1","dateOfBirth":"2008-02-28","email":"mxjamesbond@email.com","password":"secret password","rating":11,"status":"active"},"error":null}
 Assert.That(statusCode == (int)_response.StatusCode, Is.True)
   Expected: True
   But was:  False									</td>
@@ -2308,8 +2308,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid Rating</p> 
-								<p class="duration text-sm">0h:0m:0s+140ms</p> 
-								<span class="datetime">13:56:14 PM</span>
+								<p class="duration text-sm">0h:0m:0s+115ms</p> 
+								<span class="datetime">17:31:24 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -2317,9 +2317,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Create user with Invalid Rating</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:14</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:14</span>
-										<span class='badge badge-default'>0h:0m:0s+140ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:24</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:24</span>
+										<span class='badge badge-default'>0h:0m:0s+115ms</span>
 									</div>
 																	</div>
 							</div>
@@ -2329,7 +2329,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2343,7 +2343,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Mx", "James", "Bond2", "2008-02-28", "mxjamesbond@email.com", "secret password", and -1</div>
+						<div class="node">Given I have a user payload with "Mx", "James", "Bond2", "2008-02-28", "mxjamesbond@email.com", "secret password", and -1</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2357,7 +2357,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2371,7 +2371,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -2389,11 +2389,11 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:14</td>
+				<td>17:31:24</td>
 				<td>
 Expected Response Code is 400
 Actual Response Code is 200
- {"status":"Success","data":{"userId":"82d85861-7be7-41a6-9c95-38024137f51a","title":"Mx","firstName":"James","lastName":"Bond2","dateOfBirth":"2008-02-28","email":"mxjamesbond@email.com","password":"secret password","rating":-1,"status":"rejected"},"error":null}
+ {"status":"Success","data":{"userId":"9150fe0f-af06-4bd8-b822-124258752391","title":"Mx","firstName":"James","lastName":"Bond2","dateOfBirth":"2008-02-28","email":"mxjamesbond@email.com","password":"secret password","rating":-1,"status":"rejected"},"error":null}
 Assert.That(statusCode == (int)_response.StatusCode, Is.True)
   Expected: True
   But was:  False									</td>
@@ -2415,8 +2415,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Invalid Title</p> 
-								<p class="duration text-sm">0h:0m:0s+109ms</p> 
-								<span class="datetime">13:56:14 PM</span>
+								<p class="duration text-sm">0h:0m:0s+096ms</p> 
+								<span class="datetime">17:31:24 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -2424,9 +2424,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Invalid Title</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:14</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:14</span>
-										<span class='badge badge-default'>0h:0m:0s+109ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:24</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:24</span>
+										<span class='badge badge-default'>0h:0m:0s+096ms</span>
 									</div>
 																	</div>
 							</div>
@@ -2436,7 +2436,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2450,7 +2450,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Doctor", "Title", "InvalidTitle", "2005-10-18", "titleinvalidtitle@email.com", "secret password", and 1</div>
+						<div class="node">Given I have a user payload with "Doctor", "Title", "InvalidTitle", "2005-10-18", "titleinvalidtitle@email.com", "secret password", and 1</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2464,7 +2464,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2478,7 +2478,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2492,7 +2492,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2506,7 +2506,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "Validation error - unknown title"</div>
+						<div class="node">Then the error response errorMessage should be "Validation error - unknown title"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2529,8 +2529,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user without required fileld</p> 
-								<p class="duration text-sm">0h:0m:0s+188ms</p> 
-								<span class="datetime">13:56:14 PM</span>
+								<p class="duration text-sm">0h:0m:0s+149ms</p> 
+								<span class="datetime">17:31:24 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -2538,9 +2538,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Create user without required fileld</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:14</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:14</span>
-										<span class='badge badge-default'>0h:0m:0s+188ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:24</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:24</span>
+										<span class='badge badge-default'>0h:0m:0s+149ms</span>
 									</div>
 																	</div>
 							</div>
@@ -2550,7 +2550,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2564,7 +2564,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload without "firstName" field</div>
+						<div class="node">Given I have a user payload without "firstName" field</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2578,7 +2578,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2592,7 +2592,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2606,7 +2606,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2620,7 +2620,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "Validation error - firstName is required"</div>
+						<div class="node">Then the error response errorMessage should be "Validation error - firstName is required"</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -2638,7 +2638,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:14</td>
+				<td>17:31:24</td>
 				<td>
 Expected errorMessage is Validation error - firstName is required
 Actual errorMessage is __ERR_FNAME_INVALID__
@@ -2664,8 +2664,8 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user without required fileld</p> 
-								<p class="duration text-sm">0h:0m:0s+122ms</p> 
-								<span class="datetime">13:56:14 PM</span>
+								<p class="duration text-sm">0h:0m:0s+135ms</p> 
+								<span class="datetime">17:31:24 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -2673,9 +2673,9 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Create user without required fileld</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:14</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:14</span>
-										<span class='badge badge-default'>0h:0m:0s+122ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:24</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:24</span>
+										<span class='badge badge-default'>0h:0m:0s+135ms</span>
 									</div>
 																	</div>
 							</div>
@@ -2685,7 +2685,7 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2699,7 +2699,7 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload without "lastName" field</div>
+						<div class="node">Given I have a user payload without "lastName" field</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2713,7 +2713,7 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2727,7 +2727,7 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2741,7 +2741,7 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2755,7 +2755,7 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "Validation error - lastName is required"</div>
+						<div class="node">Then the error response errorMessage should be "Validation error - lastName is required"</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -2773,7 +2773,7 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:14</td>
+				<td>17:31:24</td>
 				<td>
 Expected errorMessage is Validation error - lastName is required
 Actual errorMessage is Validation error - last name must be between 2 and 255 characters
@@ -2799,8 +2799,8 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user without required fileld</p> 
-								<p class="duration text-sm">0h:0m:0s+115ms</p> 
-								<span class="datetime">13:56:14 PM</span>
+								<p class="duration text-sm">0h:0m:0s+100ms</p> 
+								<span class="datetime">17:31:24 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -2808,9 +2808,9 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Create user without required fileld</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:14</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:14</span>
-										<span class='badge badge-default'>0h:0m:0s+115ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:24</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:25</span>
+										<span class='badge badge-default'>0h:0m:0s+100ms</span>
 									</div>
 																	</div>
 							</div>
@@ -2820,7 +2820,7 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2834,7 +2834,7 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload without "dateOfBirth" field</div>
+						<div class="node">Given I have a user payload without "dateOfBirth" field</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2848,7 +2848,7 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2862,7 +2862,7 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -2880,7 +2880,7 @@ Assert.That(response.errorMessage.Equals(message), Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:14</td>
+				<td>17:31:25</td>
 				<td>
 Expected Response Code is 400
 Actual Response Code is 502
@@ -2906,8 +2906,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user without required fileld</p> 
-								<p class="duration text-sm">0h:0m:0s+118ms</p> 
-								<span class="datetime">13:56:14 PM</span>
+								<p class="duration text-sm">0h:0m:0s+105ms</p> 
+								<span class="datetime">17:31:25 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -2915,9 +2915,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Create user without required fileld</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:14</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:14</span>
-										<span class='badge badge-default'>0h:0m:0s+118ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:25</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:25</span>
+										<span class='badge badge-default'>0h:0m:0s+105ms</span>
 									</div>
 																	</div>
 							</div>
@@ -2927,7 +2927,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2941,7 +2941,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload without "email" field</div>
+						<div class="node">Given I have a user payload without "email" field</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2955,7 +2955,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -2969,7 +2969,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -2987,7 +2987,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:14</td>
+				<td>17:31:25</td>
 				<td>
 Expected Response Code is 400
 Actual Response Code is 502
@@ -3013,8 +3013,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user without required fileld</p> 
-								<p class="duration text-sm">0h:0m:1s+433ms</p> 
-								<span class="datetime">13:56:14 PM</span>
+								<p class="duration text-sm">0h:0m:0s+114ms</p> 
+								<span class="datetime">17:31:25 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -3022,9 +3022,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Create user without required fileld</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:14</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:16</span>
-										<span class='badge badge-default'>0h:0m:1s+433ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:25</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:25</span>
+										<span class='badge badge-default'>0h:0m:0s+114ms</span>
 									</div>
 																	</div>
 							</div>
@@ -3034,7 +3034,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3048,7 +3048,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload without "password" field</div>
+						<div class="node">Given I have a user payload without "password" field</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3062,7 +3062,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3076,7 +3076,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -3094,11 +3094,11 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:16</td>
+				<td>17:31:25</td>
 				<td>
 Expected Response Code is 400
 Actual Response Code is 200
- {"status":"Success","data":{"userId":"3bd3322f-62d3-4066-8917-6d59435f9eea","title":"Mr","firstName":"John","lastName":"Doe","dateOfBirth":"1987-06-04","email":"test@email.com","rating":7,"status":"active"},"error":null}
+ {"status":"Success","data":{"userId":"2304caeb-9fc0-4756-9c5c-1c2a570e41ac","title":"Mr","firstName":"John","lastName":"Doe","dateOfBirth":"1987-06-04","email":"test@email.com","rating":7,"status":"active"},"error":null}
 Assert.That(statusCode == (int)_response.StatusCode, Is.True)
   Expected: True
   But was:  False									</td>
@@ -3120,8 +3120,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user without required fileld</p> 
-								<p class="duration text-sm">0h:0m:0s+458ms</p> 
-								<span class="datetime">13:56:16 PM</span>
+								<p class="duration text-sm">0h:0m:0s+103ms</p> 
+								<span class="datetime">17:31:25 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -3129,9 +3129,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user without required fileld</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:16</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:16</span>
-										<span class='badge badge-default'>0h:0m:0s+458ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:25</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:25</span>
+										<span class='badge badge-default'>0h:0m:0s+103ms</span>
 									</div>
 																	</div>
 							</div>
@@ -3141,7 +3141,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3155,7 +3155,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload without "rating" field</div>
+						<div class="node">Given I have a user payload without "rating" field</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3169,7 +3169,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3183,7 +3183,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3197,7 +3197,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "BadRequest"</div>
+						<div class="node">Then the error response errorType should be "BadRequest"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3211,7 +3211,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "Validation error - rating is required"</div>
+						<div class="node">Then the error response errorMessage should be "Validation error - rating is required"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3234,8 +3234,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create User with Valid Data</p> 
-								<p class="duration text-sm">0h:0m:0s+469ms</p> 
-								<span class="datetime">13:56:16 PM</span>
+								<p class="duration text-sm">0h:0m:0s+125ms</p> 
+								<span class="datetime">17:31:25 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -3243,9 +3243,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create User with Valid Data</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:16</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:17</span>
-										<span class='badge badge-default'>0h:0m:0s+469ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:25</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:25</span>
+										<span class='badge badge-default'>0h:0m:0s+125ms</span>
 									</div>
 																	</div>
 							</div>
@@ -3255,7 +3255,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3269,7 +3269,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid user payload</div>
+						<div class="node">Given I have a valid user payload</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3283,7 +3283,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3297,7 +3297,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3320,8 +3320,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Valid First Name</p> 
-								<p class="duration text-sm">0h:0m:0s+462ms</p> 
-								<span class="datetime">13:56:17 PM</span>
+								<p class="duration text-sm">0h:0m:0s+138ms</p> 
+								<span class="datetime">17:31:25 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -3329,9 +3329,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Valid First Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:17</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:17</span>
-										<span class='badge badge-default'>0h:0m:0s+462ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:25</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:25</span>
+										<span class='badge badge-default'>0h:0m:0s+138ms</span>
 									</div>
 																	</div>
 							</div>
@@ -3341,7 +3341,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3355,7 +3355,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with First Name containing 2 characters</div>
+						<div class="node">Given I have a user payload with First Name containing 2 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3369,7 +3369,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3383,7 +3383,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3406,8 +3406,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Valid First Name</p> 
-								<p class="duration text-sm">0h:0m:0s+481ms</p> 
-								<span class="datetime">13:56:17 PM</span>
+								<p class="duration text-sm">0h:0m:0s+135ms</p> 
+								<span class="datetime">17:31:25 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -3415,9 +3415,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Valid First Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:17</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:18</span>
-										<span class='badge badge-default'>0h:0m:0s+481ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:25</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:25</span>
+										<span class='badge badge-default'>0h:0m:0s+135ms</span>
 									</div>
 																	</div>
 							</div>
@@ -3427,7 +3427,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3441,7 +3441,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with First Name containing 3 characters</div>
+						<div class="node">Given I have a user payload with First Name containing 3 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3455,7 +3455,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3469,7 +3469,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3492,8 +3492,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Valid First Name</p> 
-								<p class="duration text-sm">0h:0m:0s+453ms</p> 
-								<span class="datetime">13:56:18 PM</span>
+								<p class="duration text-sm">0h:0m:0s+096ms</p> 
+								<span class="datetime">17:31:25 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -3501,9 +3501,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Valid First Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:18</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:18</span>
-										<span class='badge badge-default'>0h:0m:0s+453ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:25</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:25</span>
+										<span class='badge badge-default'>0h:0m:0s+096ms</span>
 									</div>
 																	</div>
 							</div>
@@ -3513,7 +3513,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3527,7 +3527,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with First Name containing 255 characters</div>
+						<div class="node">Given I have a user payload with First Name containing 255 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3541,7 +3541,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3555,7 +3555,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3578,8 +3578,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Valid First Name</p> 
-								<p class="duration text-sm">0h:0m:0s+546ms</p> 
-								<span class="datetime">13:56:18 PM</span>
+								<p class="duration text-sm">0h:0m:0s+121ms</p> 
+								<span class="datetime">17:31:25 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -3587,9 +3587,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Valid First Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:18</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:19</span>
-										<span class='badge badge-default'>0h:0m:0s+546ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:25</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:26</span>
+										<span class='badge badge-default'>0h:0m:0s+121ms</span>
 									</div>
 																	</div>
 							</div>
@@ -3599,7 +3599,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3613,7 +3613,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with First Name containing 254 characters</div>
+						<div class="node">Given I have a user payload with First Name containing 254 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3627,7 +3627,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3641,7 +3641,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3664,8 +3664,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Valid Last Name</p> 
-								<p class="duration text-sm">0h:0m:0s+558ms</p> 
-								<span class="datetime">13:56:19 PM</span>
+								<p class="duration text-sm">0h:0m:0s+124ms</p> 
+								<span class="datetime">17:31:26 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -3673,9 +3673,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Valid Last Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:19</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:19</span>
-										<span class='badge badge-default'>0h:0m:0s+558ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:26</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:26</span>
+										<span class='badge badge-default'>0h:0m:0s+124ms</span>
 									</div>
 																	</div>
 							</div>
@@ -3685,7 +3685,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3699,7 +3699,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with Last Name containing 2 characters</div>
+						<div class="node">Given I have a user payload with Last Name containing 2 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3713,7 +3713,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3727,7 +3727,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3750,8 +3750,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Valid Last Name</p> 
-								<p class="duration text-sm">0h:0m:0s+465ms</p> 
-								<span class="datetime">13:56:19 PM</span>
+								<p class="duration text-sm">0h:0m:0s+133ms</p> 
+								<span class="datetime">17:31:26 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -3759,9 +3759,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Valid Last Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:19</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:20</span>
-										<span class='badge badge-default'>0h:0m:0s+465ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:26</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:26</span>
+										<span class='badge badge-default'>0h:0m:0s+133ms</span>
 									</div>
 																	</div>
 							</div>
@@ -3771,7 +3771,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3785,7 +3785,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with Last Name containing 3 characters</div>
+						<div class="node">Given I have a user payload with Last Name containing 3 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3799,7 +3799,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3813,7 +3813,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3836,8 +3836,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Valid Last Name</p> 
-								<p class="duration text-sm">0h:0m:0s+471ms</p> 
-								<span class="datetime">13:56:20 PM</span>
+								<p class="duration text-sm">0h:0m:0s+099ms</p> 
+								<span class="datetime">17:31:26 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -3845,9 +3845,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Valid Last Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:20</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:20</span>
-										<span class='badge badge-default'>0h:0m:0s+471ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:26</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:26</span>
+										<span class='badge badge-default'>0h:0m:0s+099ms</span>
 									</div>
 																	</div>
 							</div>
@@ -3857,7 +3857,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3871,7 +3871,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with Last Name containing 254 characters</div>
+						<div class="node">Given I have a user payload with Last Name containing 254 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3885,7 +3885,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3899,7 +3899,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3922,8 +3922,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Create user with Valid Last Name</p> 
-								<p class="duration text-sm">0h:0m:0s+493ms</p> 
-								<span class="datetime">13:56:20 PM</span>
+								<p class="duration text-sm">0h:0m:0s+101ms</p> 
+								<span class="datetime">17:31:26 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -3931,9 +3931,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Create user with Valid Last Name</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:20</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:21</span>
-										<span class='badge badge-default'>0h:0m:0s+493ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:26</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:26</span>
+										<span class='badge badge-default'>0h:0m:0s+101ms</span>
 									</div>
 																	</div>
 							</div>
@@ -3943,7 +3943,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3957,7 +3957,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with Last Name containing 255 characters</div>
+						<div class="node">Given I have a user payload with Last Name containing 255 characters</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3971,7 +3971,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -3985,7 +3985,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4008,8 +4008,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Get User Details with Invalid User ID</p> 
-								<p class="duration text-sm">0h:0m:1s+783ms</p> 
-								<span class="datetime">13:56:21 PM</span>
+								<p class="duration text-sm">0h:0m:0s+437ms</p> 
+								<span class="datetime">17:31:26 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -4017,9 +4017,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Get User Details with Invalid User ID</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:21</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:22</span>
-										<span class='badge badge-default'>0h:0m:1s+783ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:26</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:26</span>
+										<span class='badge badge-default'>0h:0m:0s+437ms</span>
 									</div>
 																	</div>
 							</div>
@@ -4029,7 +4029,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4043,7 +4043,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a invalid user ID</div>
+						<div class="node">Given I have a invalid user ID</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4057,7 +4057,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a GET request to "/users/<userId>"</div>
+						<div class="node">When I send a GET request to "/users/<userId>"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4071,7 +4071,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 400</div>
+						<div class="node">Then the response status code should be 400</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4085,7 +4085,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorType should be "Not Found"</div>
+						<div class="node">Then the error response errorType should be "Not Found"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4099,7 +4099,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the error response errorMessage should be "User not found"</div>
+						<div class="node">Then the error response errorMessage should be "User not found"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4123,7 +4123,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 							<div class="test-detail"> 
 								<p class="name">Get User Details with Valid User ID</p> 
 								<p class="duration text-sm">0h:0m:0s+138ms</p> 
-								<span class="datetime">13:56:22 PM</span>
+								<span class="datetime">17:31:26 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -4131,8 +4131,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Get User Details with Valid User ID</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:22</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:23</span>
+										<span class='badge badge-success'>20-07-2024 17:31:26</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:27</span>
 										<span class='badge badge-default'>0h:0m:0s+138ms</span>
 									</div>
 																	</div>
@@ -4143,7 +4143,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4157,7 +4157,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid user ID</div>
+						<div class="node">Given I have a valid user ID</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4171,7 +4171,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a GET request to "/users/<userId>"</div>
+						<div class="node">When I send a GET request to "/users/<userId>"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4185,7 +4185,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4208,8 +4208,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Unauthorized Access with Invalid API Key for GET</p> 
-								<p class="duration text-sm">0h:0m:0s+396ms</p> 
-								<span class="datetime">13:56:23 PM</span>
+								<p class="duration text-sm">0h:0m:0s+140ms</p> 
+								<span class="datetime">17:31:27 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -4217,9 +4217,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Unauthorized Access with Invalid API Key for GET</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:23</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:23</span>
-										<span class='badge badge-default'>0h:0m:0s+396ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:27</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:27</span>
+										<span class='badge badge-default'>0h:0m:0s+140ms</span>
 									</div>
 																	</div>
 							</div>
@@ -4229,7 +4229,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a invalid API key</div>
+						<div class="node">Given I have a invalid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4243,7 +4243,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid user ID</div>
+						<div class="node">Given I have a valid user ID</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4257,7 +4257,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a GET request to "/users/<userId>"</div>
+						<div class="node">When I send a GET request to "/users/<userId>"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4271,7 +4271,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 401</div>
+						<div class="node">Then the response status code should be 401</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -4289,7 +4289,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:23</td>
+				<td>17:31:27</td>
 				<td>
 Expected Response Code is 401
 Actual Response Code is 200
@@ -4315,8 +4315,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Unauthorized Access with Invalid API Key for POST</p> 
-								<p class="duration text-sm">0h:0m:0s+117ms</p> 
-								<span class="datetime">13:56:23 PM</span>
+								<p class="duration text-sm">0h:0m:0s+122ms</p> 
+								<span class="datetime">17:31:27 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -4324,9 +4324,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Unauthorized Access with Invalid API Key for POST</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:23</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:23</span>
-										<span class='badge badge-default'>0h:0m:0s+117ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:27</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:27</span>
+										<span class='badge badge-default'>0h:0m:0s+122ms</span>
 									</div>
 																	</div>
 							</div>
@@ -4336,7 +4336,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a invalid API key</div>
+						<div class="node">Given I have a invalid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4350,7 +4350,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid user payload</div>
+						<div class="node">Given I have a valid user payload</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4364,7 +4364,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4378,7 +4378,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 401</div>
+						<div class="node">Then the response status code should be 401</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -4396,11 +4396,11 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:23</td>
+				<td>17:31:27</td>
 				<td>
 Expected Response Code is 401
 Actual Response Code is 200
- {"status":"Success","data":{"userId":"d22317b9-6310-472c-8b87-5979067dbf11","title":"Mr","firstName":"John","lastName":"Doe","dateOfBirth":"1987-06-04","email":"test@email.com","password":"password123","rating":7,"status":"active"},"error":null}
+ {"status":"Success","data":{"userId":"ae3666b2-7c76-41fd-b2a3-5fdb2d114ac2","title":"Mr","firstName":"John","lastName":"Doe","dateOfBirth":"1987-06-04","email":"test@email.com","password":"password123","rating":7,"status":"active"},"error":null}
 Assert.That(statusCode == (int)_response.StatusCode, Is.True)
   Expected: True
   But was:  False									</td>
@@ -4422,8 +4422,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Validate created user initial status by rating</p> 
-								<p class="duration text-sm">0h:0m:0s+102ms</p> 
-								<span class="datetime">13:56:23 PM</span>
+								<p class="duration text-sm">0h:0m:0s+117ms</p> 
+								<span class="datetime">17:31:27 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -4431,9 +4431,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Validate created user initial status by rating</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:23</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:23</span>
-										<span class='badge badge-default'>0h:0m:0s+102ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:27</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:27</span>
+										<span class='badge badge-default'>0h:0m:0s+117ms</span>
 									</div>
 																	</div>
 							</div>
@@ -4443,7 +4443,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4457,7 +4457,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Mr", "AJ", "JP", "1990-11-11", "mrajjp@email.com", "secret password", and 0</div>
+						<div class="node">Given I have a user payload with "Mr", "AJ", "JP", "1990-11-11", "mrajjp@email.com", "secret password", and 0</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4471,7 +4471,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4485,7 +4485,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -4503,7 +4503,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:23</td>
+				<td>17:31:27</td>
 				<td>
 Expected Response Code is 200
 Actual Response Code is 400
@@ -4529,8 +4529,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Validate created user initial status by rating</p> 
-								<p class="duration text-sm">0h:0m:0s+125ms</p> 
-								<span class="datetime">13:56:23 PM</span>
+								<p class="duration text-sm">0h:0m:0s+143ms</p> 
+								<span class="datetime">17:31:27 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -4538,9 +4538,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Validate created user initial status by rating</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:23</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:23</span>
-										<span class='badge badge-default'>0h:0m:0s+125ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:27</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:27</span>
+										<span class='badge badge-default'>0h:0m:0s+143ms</span>
 									</div>
 																	</div>
 							</div>
@@ -4550,7 +4550,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4564,7 +4564,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Mrs", "May", "Day", "1960-12-11", "mrsmayday@email.co.uk", "secret password", and 1</div>
+						<div class="node">Given I have a user payload with "Mrs", "May", "Day", "1960-12-11", "mrsmayday@email.co.uk", "secret password", and 1</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4578,7 +4578,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4592,7 +4592,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4606,7 +4606,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the user initial status should be "new"</div>
+						<div class="node">Then the user initial status should be "new"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4629,8 +4629,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Validate created user initial status by rating</p> 
-								<p class="duration text-sm">0h:0m:0s+128ms</p> 
-								<span class="datetime">13:56:23 PM</span>
+								<p class="duration text-sm">0h:0m:0s+118ms</p> 
+								<span class="datetime">17:31:27 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -4638,9 +4638,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Validate created user initial status by rating</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:23</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:23</span>
-										<span class='badge badge-default'>0h:0m:0s+128ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:27</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:27</span>
+										<span class='badge badge-default'>0h:0m:0s+118ms</span>
 									</div>
 																	</div>
 							</div>
@@ -4650,7 +4650,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4664,7 +4664,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Miss", "April", "Amber", "2000-02-29", "missaprilamber@email.com", "secret password", and 4</div>
+						<div class="node">Given I have a user payload with "Miss", "April", "Amber", "2000-02-29", "missaprilamber@email.com", "secret password", and 4</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4678,7 +4678,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4692,7 +4692,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4706,7 +4706,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the user initial status should be "new"</div>
+						<div class="node">Then the user initial status should be "new"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4729,8 +4729,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Validate created user initial status by rating</p> 
-								<p class="duration text-sm">0h:0m:0s+160ms</p> 
-								<span class="datetime">13:56:23 PM</span>
+								<p class="duration text-sm">0h:0m:0s+097ms</p> 
+								<span class="datetime">17:31:27 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -4738,9 +4738,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Validate created user initial status by rating</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:23</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:24</span>
-										<span class='badge badge-default'>0h:0m:0s+160ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:27</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:27</span>
+										<span class='badge badge-default'>0h:0m:0s+097ms</span>
 									</div>
 																	</div>
 							</div>
@@ -4750,7 +4750,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4764,7 +4764,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Ms", "FirstName", "LastName", "1990-12-11", "msfirstnamelastname@email.com", "secret password", and 5</div>
+						<div class="node">Given I have a user payload with "Ms", "FirstName", "LastName", "1990-12-11", "msfirstnamelastname@email.com", "secret password", and 5</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4778,7 +4778,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4792,7 +4792,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4806,7 +4806,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the user initial status should be "active"</div>
+						<div class="node">Then the user initial status should be "active"</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -4824,11 +4824,11 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:24</td>
+				<td>17:31:27</td>
 				<td>
 Expected user initial status is active
 Actual user initial status is new
- {"status":"Success","data":{"userId":"53d001bb-4f0d-4233-a94a-7ffc1321bde0","title":"Ms","firstName":"FirstName","lastName":"LastName","dateOfBirth":"1990-12-11","email":"msfirstnamelastname@email.com","password":"secret password","rating":5,"status":"new"},"error":null}
+ {"status":"Success","data":{"userId":"4b1e7d19-e36e-4011-b168-5ca91744e80a","title":"Ms","firstName":"FirstName","lastName":"LastName","dateOfBirth":"1990-12-11","email":"msfirstnamelastname@email.com","password":"secret password","rating":5,"status":"new"},"error":null}
 Assert.That(response.data.status.Equals(status), Is.True)
   Expected: True
   But was:  False									</td>
@@ -4850,8 +4850,8 @@ Assert.That(response.data.status.Equals(status), Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Validate created user initial status by rating</p> 
-								<p class="duration text-sm">0h:0m:0s+100ms</p> 
-								<span class="datetime">13:56:24 PM</span>
+								<p class="duration text-sm">0h:0m:0s+110ms</p> 
+								<span class="datetime">17:31:27 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -4859,9 +4859,9 @@ Assert.That(response.data.status.Equals(status), Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-fail">Validate created user initial status by rating</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:24</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:24</span>
-										<span class='badge badge-default'>0h:0m:0s+100ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:27</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:27</span>
+										<span class='badge badge-default'>0h:0m:0s+110ms</span>
 									</div>
 																	</div>
 							</div>
@@ -4871,7 +4871,7 @@ Assert.That(response.data.status.Equals(status), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4885,7 +4885,7 @@ Assert.That(response.data.status.Equals(status), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "", "James", "Bond", "2008-02-29", "mxjamesbond@email.com", "secret password", and 9</div>
+						<div class="node">Given I have a user payload with "", "James", "Bond", "2008-02-29", "mxjamesbond@email.com", "secret password", and 9</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4899,7 +4899,7 @@ Assert.That(response.data.status.Equals(status), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4913,7 +4913,7 @@ Assert.That(response.data.status.Equals(status), Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right fail-bg">
 							<i class="fa fa-times text-white"></i>
                         </div>
@@ -4931,7 +4931,7 @@ Assert.That(response.data.status.Equals(status), Is.True)
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:56:24</td>
+				<td>17:31:27</td>
 				<td>
 Expected Response Code is 200
 Actual Response Code is 400
@@ -4957,8 +4957,8 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 						<div class="open-test">
 							<div class="test-detail"> 
 								<p class="name">Validate created user initial status by rating</p> 
-								<p class="duration text-sm">0h:0m:0s+120ms</p> 
-								<span class="datetime">13:56:24 PM</span>
+								<p class="duration text-sm">0h:0m:0s+106ms</p> 
+								<span class="datetime">17:31:27 PM</span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
@@ -4966,9 +4966,9 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
 										<h5 class="test-status text-pass">Validate created user initial status by rating</h5>
-										<span class='badge badge-success'>20-07-2024 13:56:24</span>
-										<span class='badge badge-danger'>20-07-2024 13:56:24</span>
-										<span class='badge badge-default'>0h:0m:0s+120ms</span>
+										<span class='badge badge-success'>20-07-2024 17:31:27</span>
+										<span class='badge badge-danger'>20-07-2024 17:31:28</span>
+										<span class='badge badge-default'>0h:0m:0s+106ms</span>
 									</div>
 																	</div>
 							</div>
@@ -4978,7 +4978,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a valid API key</div>
+						<div class="node">Given I have a valid API key</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -4992,7 +4992,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I have a user payload with "Mx", "James", "Bond", "2008-01-29", "mxjamesbond@email.com", "secret password", and 10</div>
+						<div class="node">Given I have a user payload with "Mx", "James", "Bond", "2008-01-29", "mxjamesbond@email.com", "secret password", and 10</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -5006,7 +5006,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">I send a POST request to "/users"</div>
+						<div class="node">When I send a POST request to "/users"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -5020,7 +5020,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the response status code should be 200</div>
+						<div class="node">Then the response status code should be 200</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -5034,7 +5034,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 			<div class="card">
 				<div class="card-header" role="tab">
 					<h5 class="card-title">
-						<div class="node">the user initial status should be "active"</div>
+						<div class="node">Then the user initial status should be "active"</div>
 						<div class="status-avatar float-right pass-bg">
 							<i class="fa fa-check text-white"></i>
                         </div>
@@ -5139,7 +5139,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	                <div class="media justify-content-between">
 						<div>
 							<h6 class="card-title">Start</h6>
-							<h6 class="font-weight-light">20-07-2024 13:56:09</h6>
+							<h6 class="font-weight-light">20-07-2024 17:31:21</h6>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -5155,7 +5155,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	                <div class="media justify-content-between">
 						<div>
 							<h6 class="card-title">Duration</h6>
-							<h6 class="font-weight-light">00:00:15.0720051</h6>
+							<h6 class="font-weight-light">00:00:06.2617866</h6>
 							<span class="text-semibold text-danger font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -5171,7 +5171,7 @@ Assert.That(statusCode == (int)_response.StatusCode, Is.True)
 	                <div class="media justify-content-between">
 						<div>
 							<p class="">Duration</p>
-							<h6 class="font-weight-light">00:00:19.5932135</h6>
+							<h6 class="font-weight-light">00:00:10.4029494</h6>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
