@@ -200,14 +200,14 @@ namespace Bits.Api.Tests.StepDefinitions
         public void ThenTheResponseStatusCodeShouldBe(int statusCode)
         {
             _response = (RestResponse)_scenarioContext["Response"];
-            Assert.That(statusCode == (int)_response.StatusCode,$"Expected Response Code is {statusCode}\nActual Response Code is {(int)_response.StatusCode}\n {_response.Content}");
+            Assert.That(statusCode == (int)_response.StatusCode,$"Expected Response Code is {statusCode}.\nActual Response Code is {(int)_response.StatusCode}.\n {_response.Content}");
         }
 
         [Then(@"the response status should be ""([^""]*)""")]
         public void ThenTheResponseShouldBe(string status)
         {
             var response = JsonConvert.DeserializeObject<ApiResponse>(_response.Content);
-            Assert.That(response.status.Equals(status), $"Expected Response status is {status}\nActual Response Code is {response.status}\n {_response.Content}");
+            Assert.That(response.status.Equals(status), $"Expected Response status is {status}.\nActual Response Code is {response.status}.\n {_response.Content}");
 
         }
 
@@ -215,7 +215,7 @@ namespace Bits.Api.Tests.StepDefinitions
         public void ThenTheUserInitialStatusShouldBe(string status)
         {
             var response = JsonConvert.DeserializeObject<ApiResponse>(_response.Content);
-            Assert.That(response.data.status.Equals(status), $"Expected user initial status is {status}\nActual user initial status is {response.data.status}\n {_response.Content}");
+            Assert.That(response.data.status.Equals(status), $"Expected user initial status is {status}.\nActual user initial status is {response.data.status}.\n {_response.Content}");
         }
 
         [Then(@"the error response errorType should be ""([^""]*)""")]
@@ -223,7 +223,7 @@ namespace Bits.Api.Tests.StepDefinitions
         {
             var response = JsonConvert.DeserializeObject<ErrorResponse>(_response.Content);
             Assert.That(response != null, "Response does not contain error");
-            Assert.That(response.errorType.Equals(type), $"Expected errorType is {type}\nActual errorType status is {response.errorType}\n {_response.Content}");
+            Assert.That(response.errorType.Equals(type), $"Expected errorType is {type}.\nActual errorType status is {response.errorType}.\n {_response.Content}");
 
         }
 
@@ -232,7 +232,7 @@ namespace Bits.Api.Tests.StepDefinitions
         {
             var response = JsonConvert.DeserializeObject<ErrorResponse>(_response.Content);
             Assert.That(response != null, "Response does not contain error");
-            Assert.That(response.errorMessage.Equals(message), $"Expected errorMessage is {message}\nActual errorMessage is {response.errorMessage}\n {_response.Content}");
+            Assert.That(response.errorMessage.Equals(message), $"Expected errorMessage is {message}.\nActual errorMessage is {response.errorMessage}.\n {_response.Content}");
 
         }
         
