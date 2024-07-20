@@ -19,7 +19,7 @@ namespace Bits.Api.Tests.StepDefinitions
         public UserAccountStepDefinitions(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
-            _client = new RestClient("https://mzo5slmo45.execute-api.eu-west-2.amazonaws.com/v1");
+            _client = new RestClient("https://mzo5slmo45.execute-api.eu-west-2.amazonaws.com/v1");          
 
         }
 
@@ -88,7 +88,6 @@ namespace Bits.Api.Tests.StepDefinitions
             ThenTheResponseStatusCodeShouldBe(200);
         }
 
-
         [Given(@"I have a user payload without ""([^""]*)"" field")]
         public void GivenIHaveAUserPayloadWithoutField(string filedName)
         {
@@ -141,6 +140,22 @@ namespace Bits.Api.Tests.StepDefinitions
             _scenarioContext["Payload"] = user;
         }
 
+        [Given(@"I have a user payload with null values")]
+        public void GivenIHaveAUserPayloadWithNullValues()
+        {
+            var user = new User()
+            {
+                title = null,
+                firstName = null,
+                lastName = null,
+                dateOfBirth = null,
+                email = null,
+                password = null,
+                rating = 0
+            };
+            _scenarioContext["Payload"] = user;
+        }
+
         [Given(@"I have a user payload with First Name containing (.*) characters")]
         public void GivenIHaveAUserPayloadWithFirstNameContainingCharacters(int numberOfChar)
         {
@@ -173,17 +188,17 @@ namespace Bits.Api.Tests.StepDefinitions
             _scenarioContext["Payload"] = user;
         }
 
-
-
         [When(@"I send a POST request to ""([^""]*)""")]
         public void WhenISendAPOSTRequestTo(string endpoint)
         {
             _request = new RestRequest(endpoint, Method.Post);
             _request.AddHeader("Authorization", $"Bearer {_apiKey}");
+            _request.AddHeader("Content-Type", "application/json");
             _request.AddJsonBody(_scenarioContext["Payload"]);
             _response = _client.Execute(_request);
             _scenarioContext["Response"] = _response;
-
+            Logger.LogRequest(_client, _request);
+            Logger.LogResponse(_response);
         }
 
 
@@ -192,8 +207,11 @@ namespace Bits.Api.Tests.StepDefinitions
         {
             _request = new RestRequest(endpoint.Replace("<userId>", (string)_scenarioContext["UserId"]), Method.Get);
             _request.AddHeader("Authorization", $"Bearer {_apiKey}");
+            _request.AddHeader("Content-Type", "application/json");
             _response = _client.Execute(_request);
             _scenarioContext["Response"] = _response;
+            Logger.LogRequest(_client, _request);
+            Logger.LogResponse(_response);
         }
 
         [Then(@"the response status code should be (.*)")]
@@ -236,5 +254,6 @@ namespace Bits.Api.Tests.StepDefinitions
 
         }
         
+
     }
 }

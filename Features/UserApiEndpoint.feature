@@ -104,7 +104,7 @@ Examples:
 | 1          |
 | 256        |
 
-Scenario Outline: Create user with Invalid Date Of Birth
+Scenario Outline: Create user with Invalid Date and Format Of Birth
     Given I have a valid API key
     And I have a user payload with "<title>", "<firstName>", "<lastName>", "<dateOfBirth>", "<email>", "<password>", and <rating> 
     When I send a POST request to "/users"
@@ -190,7 +190,7 @@ Examples:
  | Mrs   | May       | Day      | 1960-12-11  | mrsmayday@email.co.uk         | secret password | 1      | new      |
  | Miss  | April     | Amber    | 2000-02-29  | missaprilamber@email.com      | secret password | 4      | new      |
  | Ms    | FirstName | LastName | 1990-12-11  | msfirstnamelastname@email.com | secret password | 5      | active   |
- |       | James     | Bond     | 2008-02-29  | mxjamesbond@email.com         | secret password | 9      | active   |
+ | Mr    | James     | Bond     | 2008-02-29  | mxjamesbond@email.com         | secret password | 9      | active   |
  | Mx    | James     | Bond     | 2008-01-29  | mxjamesbond@email.com         | secret password | 10     | active   |
 
 Scenario: Get User Details with Invalid User ID
@@ -200,3 +200,9 @@ Scenario: Get User Details with Invalid User ID
     Then the response status code should be 400
     And the error response errorType should be "Not Found" 
     And the error response errorMessage should be "User not found"
+
+Scenario: Create User with payload contains null values
+   Given I have a valid API key
+   And I have a user payload with null values
+   When I send a POST request to "/users"
+   Then the response status code should be 400
